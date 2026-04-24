@@ -1,22 +1,68 @@
-<html>
-    <head>
-        <title>Blog Django Girls</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Blog Django Girls</a></h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Meu Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Modo Escuro</button>
         </div>
+    </header>
 
-        <div>
-            <p>publicado: 14.06.2014, 12:14</p>
-            <h2><a href="">Meu primeiro post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+    <main class="container">
+        <section class="posts-list">
+            <article class="post-card">
+                <h2>O que há de novo no Django 5</h2>
+                <p class="post-meta">Publicado em 24 de Abril de 2026 por Aldo</p>
+                <p class="post-excerpt">
+                    Neste artigo, exploramos as novas ferramentas de validação e as melhorias no ORM que tornam as consultas ao banco de dados ainda mais eficientes.
+                </p>
+                <a href="#" class="btn-read-more">Leia o artigo completo &rarr;</a>
+            </article>
 
-        <div>
-            <p>publicado: 14.06.2014, 12:14</p>
-            <h2><a href="">Meu segundo post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
+            <article class="post-card">
+                <h2>Como configurar o PythonAnywhere</h2>
+                <p class="post-meta">Publicado em 20 de Abril de 2026 por Aldo</p>
+                <p class="post-excerpt">
+                    Um guia passo a passo com comandos do Bash para automatizar o deploy do seu projeto utilizando os scripts pa_autoconfigure.
+                </p>
+                <a href="#" class="btn-read-more">Leia o artigo completo &rarr;</a>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Python (12)</a></li>
+                    <li><a href="#">Django (8)</a></li>
+                    <li><a href="#">Servidores (4)</a></li>
+                </ul>
+            </div>
+            
+            <div class="widget">
+                <h3>Sobre o Autor</h3>
+                <p>Desenvolvedor focado em backend, compartilhando aprendizados reais sobre Python e infraestrutura web.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
